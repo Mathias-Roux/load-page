@@ -1,0 +1,36 @@
+.loading-wrapper {
+  text-align: center;
+}
+
+.loading-text {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.loading-text:after{
+  content: '';
+  animation: 6s slidein;
+  height: 5px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 76%;
+  }
+}
+
+.loading-text > span{
+  font-size: 5rem;
+}
